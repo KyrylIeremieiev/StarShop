@@ -40,7 +40,7 @@ html, body {
 
 body {
   line-height: 1.6;
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 ol, ul {
@@ -88,7 +88,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 120vh;
+  padding-bottom: 300vh;
   padding-left: 30vw;
 }
 
@@ -241,4 +241,37 @@ button {
   height: 1vw;
   background: #000000;
   
+}
+
+.cat{
+  margin-top: 50vh;
+}
+
+.article{
+  display: grid;
+  grid-template-columns: 30% 70%;
+  height: 70vh;
+  padding-left: 8rem;
+  gap: 1rem;
+  border: 1px solid #000000;
+}
+
+
+.article__title{
+  color: #3946FE;
+  font-family: 'Dancing Script', cursive;
+  font-size: 4rem;
+  font-weight: 400;
+}
+.imgCarrier{
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+}
+.article__img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
 }
