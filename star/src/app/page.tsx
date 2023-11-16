@@ -13,13 +13,16 @@ export default function Home() {
       <div className="nav__dummy nav__dummy--bottom"></div>
 
       <section className='nav--left nav'>
-        
+        <figure className='menu'><i className="fa-solid fa-bars menu__icon"></i></figure>
       </section>
       <section className="nav--top nav">
-        <h2 className='nav--top__title'>$18.000.0000</h2>
+        <h2 className='nav--top__title'>$0</h2>
         <h2 className='nav--top__title nav--top__title--right'>Login</h2>
       </section>
-      <section className="nav--right nav"></section>
+      <section className="nav--right nav">
+        <a className='nav--right__item'><i className="fa-solid fa-envelope"></i></a>
+        <a className='nav--right__item'><i className="fa-solid fa-phone"></i></a>
+      </section>
       <section className="nav--bottom nav">
       <h2 className='nav--top__title nav--bottom__title'>Created by Kyrylo Ieremieiev</h2>
         <h2 className='nav--top__title nav--top__title--right nav--bottom__title'>Inspired By Starpeggio</h2>
