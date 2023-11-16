@@ -1,0 +1,220 @@
+/* Basic CSS Reset */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+figure,
+ol,
+ul,
+dl,
+dd,
+hgroup,
+fieldset,
+legend {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  background: #E8ECF2;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img,
+iframe {
+  max-width: 100%;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.6;
+  font-family: Arial, sans-serif;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  overflow: visible;
+}
+
+/* Add your custom styles below this line */
+
+
+.main{
+  padding: 2rem;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.shop{
+  position: relative;
+}
+
+.shop::after{
+  background-color: #E8ECF1;
+opacity: 0.1;
+background: radial-gradient(circle, transparent 20%, #E8ECF1 20%, #E8ECF1 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #E8ECF1 20%, #E8ECF1 80%, transparent 80%, transparent) 25px 25px, linear-gradient(#000000 2px, transparent 2px) 0 -1px, linear-gradient(90deg, #000000 2px, #E8ECF1 2px) -1px 0;
+background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: -1;
+}
+
+.four-pointed-star{
+  position:relative;
+  margin:1em auto;
+  width:1em;
+  font-size:12em;
+}
+
+.four-pointed-star:before{
+  content:"";
+  position:absolute;
+  background:red;
+  width:1em;
+  height:1.15em;
+  transform:rotate(-45deg) skewX(22.5deg) skewY(22.5deg);
+}
+
+.four-pointed-star:after{
+  content:"";
+  position:absolute;
+  background:red;
+  width:1em;
+  height:1.15em;
+  transform:rotate(45deg) skewX(22.5deg) skewY(22.5deg);
+}
+
+.welcome{
+  display: flex;
+  line-height: 8rem;
+  padding-top: 20rem;
+  justify-content: flex-start;
+  padding-left: 8rem;
+  height: 100vh;
+  width: 100%;
+}
+
+.welcome__title{
+  color: #3946FE;
+  font-size: 20rem;
+  font-family: 'Dancing Script', cursive;
+  font-weight: 400;
+  
+}
+
+.nav--left{
+  width: 6vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border: 1px solid #000000;
+
+}
+.nav--top{
+  width: 100vw;
+  height: 8vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border: 1px solid #000000;
+  
+}
+
+.nav--right{
+  width: 6vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  border: 1px solid #000000;
+}
+
+.nav--bottom{
+  width: 100vw;
+  height: 2vh;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  border: 1px solid #000000;
+
+  margin-bottom: 1rem;
+}
+
+.nav__dummy--right{
+  width: 6vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+.nav__dummy--top{
+  width: 100vw;
+  height: 8vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.nav__dummy--left{
+  width: 6vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.nav__dummy--bottom{
+  width: 100vw;
+  height: 2vh;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+.nav__dummy{
+  background: #E8ECF2;
+  z-index: 1;
+}
+
+.nav{
+  z-index: 2;
+
+}
+
+.left__square{
+  width: 6vw;
+  height: 1vw;
+  background: #000000;
+  
+}
